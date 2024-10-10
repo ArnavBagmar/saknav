@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Love Journey</title>
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="background-music" loop>
+    <source src="music/tumsehi.mp3" type="audio/mpeg">
+  </audio>
+  <div id="music-control">
+    <button id="music-toggle">Play Music</button>
+  </div>
+
+  <!-- Parallax Background -->
+  <div class="parallax"></div>
+
+  <!-- Starting Screen Overlay -->
+  <div id="starting-screen">
+    <div class="overlay-content">
+      <h1>Welcome to Our Journey</h1>
+      <p>Click Anywhere to Begin</p>
+      <p>Hope You Love It!</p>
+    </div>
+  </div>
+
+  <!-- Timeline Container -->
+  <div class="timeline">
+    <!-- Timeline items will be injected here -->
+  </div>
+
+  <!-- Particle JS -->
+  <div id="particles-js"></div>
+
+  <!-- jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- AOS Library JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Particle JS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <!-- Main JS File -->
+  <script src="general.js"></script>
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init({
+      duration: 800,
+    });
+  </script>
+  <!-- Initialize Particles JS -->
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles JS loaded');
+    });
+  </script>
+</body>
+</html>
