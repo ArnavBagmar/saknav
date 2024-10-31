@@ -8,7 +8,7 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-	font-family: 'Great Vibes', cursive;
+	font-family: 'Great Vibes';
 	color: #4e4e4e;
   }
   
@@ -41,7 +41,7 @@ body {
   
   /* Parallax Background */
   .parallax {
-	background-image: url('images/background2.jpg'); /* Replace with your image */
+	background-image: url('images/tobecontinued.webp');
 	min-height: 100vh;
 	background-attachment: fixed;
 	background-position: center;
@@ -96,6 +96,8 @@ body {
 	margin: 50px auto;
 	padding: 40px 0;
 	width: 80%;
+	display: flex;
+	flex-direction: column-reverse; 
   }
   
   .timeline::after {
@@ -211,6 +213,22 @@ body {
 	margin: 20px 0 0;
 	color: #555;
 	line-height: 1.6;
+  }
+  
+  .image-carousel {
+	position: relative;
+	width: 100%;
+	height: auto;
+  }
+  
+  .image-carousel img {
+	width: 100%;
+	height: auto;
+	display: none !important;
+  }
+  
+  .image-carousel img:first-child {
+	display: block !important;
   }
   
   /* Decorative Divider */
